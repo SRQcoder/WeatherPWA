@@ -1,0 +1,86 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>WeatherPWA</Name>
+    <Description>Sample Weather PWA</Description>
+    <ProjectType>DNX</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <CreateInPlace>true</CreateInPlace>
+    <DefaultName>WeatherPWA</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="WeatherPWA.xproj" File="WeatherPWA.xproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="inline.css">inline.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="inline.min.css">inline.min.css</ProjectItem>
+        </Folder>
+        <Folder Name="images" TargetFolderName="images">
+          <Folder Name="icons" TargetFolderName="icons">
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-128x128.png">icon-128x128.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-144x144.png">icon-144x144.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-152x152.png">icon-152x152.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-192x192.png">icon-192x192.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-256x256.png">icon-256x256.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-32x32.png">icon-32x32.png</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="clear.png">clear.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cloudy.png">cloudy.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cloudy_s_sunny.png">cloudy_s_sunny.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cloudy-scattered-showers.png">cloudy-scattered-showers.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="fog.png">fog.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_white_24px.svg">ic_add_white_24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_refresh_white_24px.svg">ic_refresh_white_24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="partly-cloudy.png">partly-cloudy.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="rain.png">rain.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="scattered-showers.png">scattered-showers.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sleet.png">sleet.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="snow.png">snow.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="thunderstorm.png">thunderstorm.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="wind.png">wind.png</ProjectItem>
+        </Folder>
+        <Folder Name="js" TargetFolderName="js">
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.js">app.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.min.js">app.min.js</ProjectItem>
+        </Folder>
+        <Folder Name="lib" TargetFolderName="lib" />
+        <ProjectItem ReplaceParameters="true" TargetFileName="_references.js">_references.js</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="manifest.json">manifest.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="service-worker.js">service-worker.js</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="bower.json">bower.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".bowerrc">.bowerrc</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="bundleconfig.json">bundleconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.lock.json">project.lock.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
